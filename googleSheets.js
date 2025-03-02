@@ -1,9 +1,9 @@
 import axios from 'axios';
 
 const fetchSheetData = async () => {
-  const sheetId = 'your-sheet-id'; // Replace with your Google Sheet ID
-  const apiKey = 'your-api-key';   // Replace with your Google API Key
-  const range = 'Sheet1!A1:D10';   // The range you want to fetch from, e.g., A1:D10
+  const sheetId = 'your-sheet-id'; 
+  const apiKey = 'your-api-key';   
+  const range = 'Sheet1!A1:D10';   
 
   try {
     const response = await axios.get(
