@@ -18,9 +18,16 @@ const PetData = ({ data }) => {
                     <tbody>
                         {data.map((row, index) => (
                             <tr key={index}>
-                                {row.map((cell, idx) => (
-                                    <td key={idx}>{cell}</td>
-                                ))}
+                                <td>{row[0]}</td>
+                                <td>{row[1]}</td>
+                                <td>{row[2]}</td>
+                                <td>
+                                    {row[3] ? (
+                                        <img src={row[3]} alt={`Pet ${row[0]}`} style={{ width: '100px', height: '100px' }} />
+                                    ) : (
+                                        'No Image'
+                                    )}
+                                </td>
                             </tr>
                         ))}
                     </tbody>
