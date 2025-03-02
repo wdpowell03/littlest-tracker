@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 const fetchSheetData = async () => {
-  const sheetId = '1Bzme5HbQjKD1qa2-qfRHGMqpiE58NxgGNNVXATaA_BM';
-  const apiKey = 'AIzaSyBjGRDGH8J-8JHZPMYdblH5m0O2TwNxn_M';
+  const sheetId = process.env.REACT_APP_GOOGLE_SHEET_ID;
+  const apiKey = process.env.REACT_APP_GOOGLE_API_KEY;
   const range = '';
 
   try {
